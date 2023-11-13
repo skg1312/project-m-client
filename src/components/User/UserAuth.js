@@ -54,7 +54,7 @@ const UserAuthProvider = (props) => {
     };
 
     useEffect(() => {
-        axios.get(`${API}user`)
+        axios.get(`${API}/user`)
             .then(res => {
                 setUserlist(res.data);
             })
